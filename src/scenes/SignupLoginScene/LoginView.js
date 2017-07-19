@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollView, View, TextInput } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { LoginLogo, Button, InputText } from '../../components';
-import styles, { Colors } from './styles';
+import styles from './styles';
 
 export default class LoginView extends Component {
   static propTypes = {
@@ -42,7 +42,7 @@ export default class LoginView extends Component {
         <Button onPress={onLogin} title="Log In" />
         <Button
           onPress={onForgotPassword}
-          buttonStyle={styles.forgotButton}
+          style={styles.forgotButton}
           labelStyle={styles.forgotLabel}
           title="Forgot Password?"
         />

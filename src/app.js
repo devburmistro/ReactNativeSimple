@@ -4,13 +4,17 @@ import { StackNavigator } from 'react-navigation';
 
 import SignupLoginScene from './scenes/SignupLoginScene';
 import EditProfileScreen from './scenes/EditProfileScreen';
+import IntroScreen from './scenes/IntroScreen';
+import IntroLoginScene from './scenes/IntroLoginScene';
 
 const AppNavigator = StackNavigator({
   SignupLoginScene: { screen: SignupLoginScene },
   EditProfileScreen: { screen: EditProfileScreen },
+  IntroScreen: { screen: IntroScreen },
+  IntroLoginScene: { screen: IntroLoginScene }
 }, {
   headerMode: 'none',
-  initialRouteName: 'SignupLoginScene'
+  initialRouteName: 'IntroLoginScene'
 });
 
 export default () => (

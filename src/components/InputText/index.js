@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, TextInput, StyleSheet, Platform } from 'react-native';
-import { Metric, Colors } from '../../themes/index';
+import { Metric, Colors } from '../../themes';
 import { applyLetterSpacing } from '../../utils/string';
 
 const styles = StyleSheet.create({
@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     paddingVertical: Platform.OS === 'ios' ? 20 : 15,
     fontFamily: 'Lato-Light',
     fontWeight: '300',
+    letterSpacing: 1,
     color: Colors.brand.drakGray
   },
 });

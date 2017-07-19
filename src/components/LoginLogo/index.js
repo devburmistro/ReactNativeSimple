@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View, Image, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { Label } from '../';
 import imgBackground from '../../images/login_logo.jpg';
 import { Metric, Colors } from '../../themes/index';
 
@@ -46,8 +47,6 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 20,
-    fontFamily: 'Lato',
-    backgroundColor: 'transparent',
   },
   activeLabel: {
     color: Colors.brand.blue,
@@ -67,10 +66,10 @@ export const LoginLogo = ({ onShowSignUpView }) => (
     </View>
     <View style={styles.buttonContainer}>
       <TouchableOpacity style={styles.buttonItem} onPress={onShowSignUpView}>
-        <Text style={[styles.label, styles.inactiveLabel]}>Sign Up</Text>
+        <Label style={[styles.label, styles.inactiveLabel]} value="Sign Up" />
       </TouchableOpacity>
       <View style={[styles.activeItem, styles.buttonItem]}>
-        <Text style={[styles.label, styles.activeLabel]}>Log In</Text>
+        <Label style={[styles.label, styles.activeLabel]} value="Log In" />
       </View>
     </View>
   </View>

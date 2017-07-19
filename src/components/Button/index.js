@@ -1,7 +1,7 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { Metric, Colors } from '../../themes/index';
-import { applyLetterSpacing } from '../../utils/string';
+import { TouchableOpacity, StyleSheet } from 'react-native';
+import { Label } from '../';
+import { Metric, Colors } from '../../themes';
 
 const styles = StyleSheet.create({
   button: {
@@ -15,12 +15,11 @@ const styles = StyleSheet.create({
   label: {
     color: Colors.brand.white,
     fontSize: 17,
-    fontFamily: 'Lato',
   }
 });
 
-export const Button = ({ onPress, buttonStyle, labelStyle, title }) => (
-  <TouchableOpacity style={[styles.button, buttonStyle]} onPress={onPress}>
-    <Text style={[styles.label, labelStyle]}>{applyLetterSpacing(title)}</Text>
+export const Button = ({ onPress, style, labelStyle, title }) => (
+  <TouchableOpacity style={[styles.button, style]} onPress={onPress}>
+    <Label value={title} style={[styles.label, labelStyle]} />
   </TouchableOpacity>
 );

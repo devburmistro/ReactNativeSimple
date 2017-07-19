@@ -48,11 +48,7 @@ export default class SignupView extends Component {
     return (
       <View style={styles.submitButtonContainer}>
         <Button title="Sign Up" onPress={onSignUp} />
-        <Button
-          buttonStyle={styles.fbButton}
-          title="Sign Up With Facebook"
-          onPress={onFacebookSignUp}
-        />
+        <Button style={styles.fbButton} title="Sign Up With Facebook" onPress={onFacebookSignUp} />
       </View>
     );
   }
