@@ -16,7 +16,7 @@ const AppNavigator = StackNavigator({
   FindVenuesScreen: { screen: FindVenuesScreen },
 }, {
   headerMode: 'none',
-  initialRouteName: 'FindVenuesScreen'
+  initialRouteName: 'IntroScreen'
 });
 
 export default () => (

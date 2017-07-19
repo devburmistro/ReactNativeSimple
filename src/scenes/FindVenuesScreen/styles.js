@@ -9,17 +9,20 @@ export default StyleSheet.create({
   },
   imgContainer: {
     width: Metric.screenWidth,
-    height: Metric.screenHeight * 0.5,
+    height: Metric.screenHeight * 0.6,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red'
   },
   imgLocation: {
     width: Metric.screenWidth * 0.35,
     height: Metric.screenHeight * 0.5
   },
   bottomContainer: {
-    flex: 1,
+    position: 'absolute',
+    top: Metric.screenHeight * 0.7,
+    bottom: 0,
+    left: 0,
+    right: 0,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-end'
@@ -32,7 +35,8 @@ export default StyleSheet.create({
   content: {
     marginTop: 20,
     fontSize: 16,
-    lineHeight: 20,
+    lineHeight: 25,
+    paddingVertical: 5,
     marginHorizontal: 30,
     fontFamily: 'Lato-Light',
     textAlign: 'center'

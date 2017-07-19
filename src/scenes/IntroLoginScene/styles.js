@@ -21,7 +21,6 @@ export default StyleSheet.create({
   },
   commentContainer: {
     marginVertical: 30,
-    marginHorizontal: 50,
   },
   imgIntroLogin: {
     width: Metric.screenWidth,

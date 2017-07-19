@@ -4,6 +4,7 @@ import introLogo from '../../images/intro_logo.png';
 import { Label } from '../';
 import styles from './styles';
 
+const label = 'I have always waited for my life to \nchange until I realised that it has \nbeen waiting for me to change this \nwhole time'
 export const IntroStep1 = () => (
   <View style={styles.container}>
     <Image source={introLogo} style={styles.imgBackground} resizeMode="cover" />
@@ -11,7 +12,7 @@ export const IntroStep1 = () => (
       <Label style={styles.title} value="Real time recommendations" />
       <Label
         style={styles.content}
-        value="I have always waited for my life to change until I realised that it has been waiting for me to change this whole time"
+        value={label}
       />
     </View>
   </View>

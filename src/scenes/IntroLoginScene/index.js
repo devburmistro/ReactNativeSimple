@@ -4,14 +4,14 @@ import { Button, Label } from '../../components';
 import styles from './styles';
 import imgIntroLogin from '../../images/intro_login_logo.png';
 
+const label = 'Keep track of your favorite \nplaces at all times';
 export default class IntroLoginScene extends Component {
   constructor(props) {
     super(props);
     this.state = { };
   }
   onSignUp = () => this.props.navigation.navigate('SignupLoginScene');
-  onSkip = () => {
-  };
+  onSkip = () => this.props.navigation.navigate('FindVenuesScreen');
   renderButtons() {
     return (
       <View style={styles.buttonContainer}>
@@ -32,7 +32,7 @@ export default class IntroLoginScene extends Component {
           <Text style={styles.logoLabel}>Stir</Text>
         </View>
         <View style={styles.commentContainer}>
-          <Label value="Keep track of your favorite places at all times" style={styles.labelComment} />
+          <Label value={label} style={styles.labelComment} />
         </View>
       </View>
     );

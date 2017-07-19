@@ -23,7 +23,6 @@ export default StyleSheet.create({
     marginTop: 20,
     fontSize: 16,
     lineHeight: 20,
-    marginHorizontal: 50,
     fontFamily: 'Lato-Light',
     textAlign: 'center'
   }
