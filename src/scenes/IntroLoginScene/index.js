@@ -9,11 +9,8 @@ export default class IntroLoginScene extends Component {
     super(props);
     this.state = { };
   }
-  onSignUp = () => {
-
-  };
+  onSignUp = () => this.props.navigation.navigate('SignupLoginScene');
   onSkip = () => {
-
   };
   renderButtons() {
     return (

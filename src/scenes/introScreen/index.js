@@ -17,12 +17,8 @@ export default class IntroScreen extends Component {
     super(props);
     this.refSwipe = null;
   }
-  onSkip = () => {
-
-  };
-  onNext = () => {
-    this.refSwipe.scrollBy(1);
-  };
+  onSkip = () => this.props.navigation.navigate('IntroLoginScene');
+  onNext = () => this.refSwipe.scrollBy(1);
   renderBottomButtons() {
     return (
       <View style={styles.bottomContainer}>

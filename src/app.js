@@ -6,15 +6,17 @@ import SignupLoginScene from './scenes/SignupLoginScene';
 import EditProfileScreen from './scenes/EditProfileScreen';
 import IntroScreen from './scenes/IntroScreen';
 import IntroLoginScene from './scenes/IntroLoginScene';
+import FindVenuesScreen from './scenes/FindVenuesScreen';
 
 const AppNavigator = StackNavigator({
   SignupLoginScene: { screen: SignupLoginScene },
   EditProfileScreen: { screen: EditProfileScreen },
   IntroScreen: { screen: IntroScreen },
-  IntroLoginScene: { screen: IntroLoginScene }
+  IntroLoginScene: { screen: IntroLoginScene },
+  FindVenuesScreen: { screen: FindVenuesScreen },
 }, {
   headerMode: 'none',
-  initialRouteName: 'IntroLoginScene'
+  initialRouteName: 'FindVenuesScreen'
 });
 
 export default () => (
